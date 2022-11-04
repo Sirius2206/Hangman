@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    max-width: 800px;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.endgame-message {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.hm-drawing {
+    position: relative;
+}
+
+.hm-word {
+    display: flex;
+    gap: .25em;
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
+.hm-letter {
+    border-bottom: .1em solid black;
+}
+
+.hm-letter-hidden {
+    visibility: hidden;
+}
+
+.hm-letter-visible {
+    visibility: visible;
+}
+
+.hm-keyboard-container {
+    align-self: stretch;
+}
+
+.hm-keyboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    gap: .5rem;
+}
+
+.btn {
+    width: 100%;
+    border: 3px solid black;
+    background: none;
+    aspect-ratio: 1 / 1;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: .5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+
+.btn:hover:not(:disabled),
+.btn:focus:not(:disabled) {
+    background-color: hsl(200, 100%, 75%);
+}
+
+.btn-active {
+    background-color: hsl(200, 100%, 50%);
+    color: white;
+}
+
+.btn-disabled{
+opacity: .3;
+}
